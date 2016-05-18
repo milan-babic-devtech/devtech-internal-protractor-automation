@@ -8,7 +8,7 @@ var Page  = {
     },
     clickLogo: function(){
         this.logo.click();
-        browser.sleep(3000);
+        browser.sleep(5000);
     },
     
     waitFor: function(el){

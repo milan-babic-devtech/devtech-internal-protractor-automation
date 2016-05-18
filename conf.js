@@ -19,7 +19,8 @@ exports.config = {
 //   'browserName': 'chrome'
 // }],
 
-    specs: ['specs/spec.js'],
+    specs: ['specs/spec.js'
+    ,'specs/navigation-specs.js'],
     
     // accessed with browser.params
     params: {
