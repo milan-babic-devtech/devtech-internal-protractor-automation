@@ -1,5 +1,5 @@
 var elements = Object.create(require("../resources/elements.js"));
-var Navigation  = (function(){
+var Navigation  = {
     // Page Elements
     logo: element(by.css('.navbar-inner a.logo')),
     
@@ -9,6 +9,5 @@ var Navigation  = (function(){
         browser.sleep(3000);
     }
 
-
-}());
+};
 module.exports = Navigation;

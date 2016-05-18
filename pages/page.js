@@ -1,6 +1,6 @@
 var elements = Object.create(require("../resources/elements.js"));
 var Page  = {
-    
+    homePageUrl: 'http://192.168.88.226/',
     logo: element(by.css('.navbar-inner a.logo')),
 
     setWindowSize: function () {

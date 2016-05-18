@@ -19,7 +19,7 @@ exports.config = {
 //   'browserName': 'chrome'
 // }],
 
-    specs: ['spec.js'],
+    specs: ['specs/spec.js'],
     
     // accessed with browser.params
     params: {
@@ -33,7 +33,7 @@ exports.config = {
     },
 
     onPrepare: function() {
-        global.bd = browser.driver; //accessed with global.bd, not much of an improvement in this case
+        global.bd = browser.driver; //accessed with global.bd
 //        Add a screenshot reporter and store screenshots to `/tmp/screnshots`: 
    /*   jasmine.getEnv().addReporter(new HtmlReporter({
         baseDirectory: './tmp/screenshots'
