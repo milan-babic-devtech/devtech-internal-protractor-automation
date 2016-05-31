@@ -1,3 +1,4 @@
+// This file should be used if we decide to use external source for element locators which should be useful for use in both projects at once
 var Elements = {
 //    Header
     logo: element(by.css('.navbar-inner a.logo'))

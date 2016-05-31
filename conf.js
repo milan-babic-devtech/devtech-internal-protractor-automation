@@ -19,8 +19,10 @@ exports.config = {
 //   'browserName': 'chrome'
 // }],
 
-    specs: ['specs/spec.js'
-    ,'specs/navigation-specs.js'],
+    specs: [
+        'specs/navigation-specs.js',
+        'specs/home-page-specs.js'
+    ],
     
     // accessed with browser.params
     params: {
@@ -34,7 +36,10 @@ exports.config = {
     },
 
     onPrepare: function() {
+        //    browser.driver.manage().timeouts().implicitlyWait(10000);
+        browser.ignoreSynchronization = true;
         global.bd = browser.driver; //accessed with global.bd
+       
 //        Add a screenshot reporter and store screenshots to `/tmp/screnshots`: 
    /*   jasmine.getEnv().addReporter(new HtmlReporter({
         baseDirectory: './tmp/screenshots'

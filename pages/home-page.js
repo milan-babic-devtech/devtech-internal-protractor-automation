@@ -1,12 +1,12 @@
-var Navigation  = {
+var HomePage  = {
     // Page Elements
     logo: element(by.css('.navbar-inner a.logo')),
     
     // Navigation
+    url: browser.params.homePageUrl,
     navigateToHomePage: function(){
-        this.logo.click();
-        browser.sleep(3000);
+        return this.logo.click();
     }
 
 };
-module.exports = Navigation;
+module.exports = HomePage;
