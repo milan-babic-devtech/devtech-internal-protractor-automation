@@ -1,5 +1,5 @@
 var navigation = Object.create(require("../pages/navigation.js"));
-var homepage = Object.create(require("../pages/home-page.js"));
+var homepage = Object.create(require("../pages/homepage.js"));
 var footer = Object.create(require("../pages/footer.js"));
 
 describe('Devtech homepage', function () {

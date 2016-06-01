@@ -21,7 +21,7 @@ exports.config = {
 
     specs: [
         'specs/navigation-specs.js',
-        'specs/home-page-specs.js'
+        'specs/homepage-specs.js'
     ],
     
     // accessed with browser.params
