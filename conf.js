@@ -4,6 +4,9 @@
 exports.config = {
     // The address of a running selenium server.
     seleniumAddress: 'http://localhost:4444/wd/hub',
+    
+    // This line specifies version of Jasmine to use instead of the default 1.3
+    framework: 'jasmine',
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
@@ -20,9 +23,16 @@ exports.config = {
 // }],
 
     specs: [
-        'specs/navigation-specs.js',
-        'specs/homepage-specs.js'
+        // 'specs/navigation-spec.js',
+        // 'specs/homepage-spec.js',
+        // 'specs/contact-us-spec.js'
     ],
+    
+    suites: {
+        navigate: 'specs/navigation-spec.js',
+        homepage: 'specs/homepage-spec.js',
+        contactUsPage: 'specs/contact-us-spec.js'
+    },
     
     // accessed with browser.params
     params: {
@@ -31,8 +41,10 @@ exports.config = {
 
     // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {
-        showColors: true, // Use colors in the command line report.
-        isVerbose: true
+        // Use colors in the command line report.
+        showColors: true, 
+        isVerbose: true  
+        // print: function () { }
     },
 
     onPrepare: function() {

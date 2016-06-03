@@ -6,7 +6,8 @@ var Navigation  = {
     navigateToHomePage: function(){
         this.logo.click();
         browser.sleep(3000);
-    }
-
+    },
+    // Action
+    
 };
 module.exports = Navigation;

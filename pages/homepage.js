@@ -1,12 +1,11 @@
 var HomePage  = {
     // Page Elements
-    logo: element(by.css('.navbar-inner a.logo')),
+    carousel: element(by.css('#featured')),
     
     // Navigation
     url: browser.params.homePageUrl,
-    navigateToHomePage: function(){
-        return this.logo.click();
-    }
+    
+    // Action
 
 };
 module.exports = HomePage;

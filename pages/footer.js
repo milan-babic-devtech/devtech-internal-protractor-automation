@@ -2,7 +2,7 @@ var Footer  = {
     // Page Elements
     
     
-    // Methods
+    // Action
     
 
 };
