@@ -6,10 +6,10 @@ describe('Devtech Contact Us page', function () {
     
     beforeAll(function(){
         browser.ignoreSynchronization = true;
+        browser.get(contactUs.url);
     });
     
     it('should verify that the Contact Us page url is correct', function () {
-        browser.get(contactUs.url);
         browser.getCurrentUrl().then(function(url){
             expect(url).toBe(contactUs.url);
         });

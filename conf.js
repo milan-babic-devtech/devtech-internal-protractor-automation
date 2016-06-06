@@ -27,7 +27,7 @@ exports.config = {
         // 'specs/homepage-spec.js',
         // 'specs/contact-us-spec.js'
     ],
-    
+    // run specific suites with 'protractor conf.js --suite navigate,contactUsPage'
     suites: {
         navigate: 'specs/navigation-spec.js',
         homepage: 'specs/homepage-spec.js',
@@ -43,7 +43,6 @@ exports.config = {
     jasmineNodeOpts: {
         // Use colors in the command line report.
         showColors: true, 
-        // isVerbose: true  
         print: function () { }
     },
 
@@ -51,14 +50,9 @@ exports.config = {
         //    browser.driver.manage().timeouts().implicitlyWait(10000);
         browser.ignoreSynchronization = true;
         global.bd = browser.driver; //accessed with global.bd
-       
-//        Add a screenshot reporter and store screenshots to `/tmp/screnshots`: 
-   /*   jasmine.getEnv().addReporter(new HtmlReporter({
-        baseDirectory: './tmp/screenshots'
-        , docName: 'appDirectReport.html'
-        , docTitle: 'AppDirect report'
-        , cssOverrideFile: './css/style.css'
-        , preserveDirectory: false
-      }));*/
+
+        // add jasmine spec reporter: 'npm install jasmine-spec-reporter --save-dev' in the root folder
+        var SpecReporter = require('jasmine-spec-reporter');
+        jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: 'all'}));
    }
 } 
