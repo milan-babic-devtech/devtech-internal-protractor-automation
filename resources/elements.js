@@ -1,3 +1,5 @@
+// This file should be used if we decide to use external source for element locators which should be useful for use in both projects at once
+// The following element locators that are commented are here as a help for various ways to locate page elements 
 var Elements = {
 //    Header
     logo: element(by.css('.navbar-inner a.logo'))

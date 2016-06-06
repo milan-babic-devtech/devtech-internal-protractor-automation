@@ -1,4 +1,3 @@
-var elements = Object.create(require("../resources/elements.js"));
 var Navigation  = {
     // Page Elements
     logo: element(by.css('.navbar-inner a.logo')),
@@ -7,7 +6,8 @@ var Navigation  = {
     navigateToHomePage: function(){
         this.logo.click();
         browser.sleep(3000);
-    }
-
+    },
+    // Action
+    
 };
 module.exports = Navigation;
