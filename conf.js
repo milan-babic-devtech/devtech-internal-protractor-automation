@@ -6,7 +6,7 @@ exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
     
     // This line specifies version of Jasmine to use instead of the default 1.3
-    framework: 'jasmine',
+    framework: 'jasmine2',
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
@@ -43,8 +43,8 @@ exports.config = {
     jasmineNodeOpts: {
         // Use colors in the command line report.
         showColors: true, 
-        isVerbose: true  
-        // print: function () { }
+        // isVerbose: true  
+        print: function () { }
     },
 
     onPrepare: function() {
