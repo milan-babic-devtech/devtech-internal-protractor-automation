@@ -51,7 +51,7 @@ exports.config = {
         browser.ignoreSynchronization = true;
         global.bd = browser.driver; //accessed with global.bd
 
-        // add jasmine spec reporter: 'npm install jasmine-spec-reporter --save-dev' in the root folder
+        // add jasmine spec reporter: 'npm install jasmine-spec-reporter --save-dev' in the root folder of the test
         var SpecReporter = require('jasmine-spec-reporter');
         jasmine.getEnv().addReporter(new SpecReporter({displayStacktrace: 'all'}));
    }
